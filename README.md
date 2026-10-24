@@ -1,4 +1,6 @@
-![LibMAX31856](.img/banner.svg)
+<p align="center">
+  <img src=".img/banner.svg" alt="LibMAX31856 — Arduino library for the MAX31856 thermocouple-to-digital converter" width="100%">
+</p>
 
 # LibMAX31856
 
