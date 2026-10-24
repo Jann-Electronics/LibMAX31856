@@ -1,0 +1,14 @@
+{
+  "name": "LibMAX31856",
+  "version": "1.0.0",
+  "description": "Arduino driver for the MAX31856 thermocouple-to-digital converter (SPI)",
+  "keywords": "max31856, thermocouple, spi, sensor",
+  "authors": [
+    {
+      "name": "JojeNN97",
+      "maintainer": true
+    }
+  ],
+  "frameworks": "arduino",
+  "dependencies": []
+}

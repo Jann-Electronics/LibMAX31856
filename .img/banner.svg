@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320">
+  <title>LibMAX31856 — MAX31856 thermocouple driver for Arduino</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1120"/>
+      <stop offset="1" stop-color="#1c1030"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1" fill="#ffffff" fill-opacity="0.07"/>
+    </pattern>
+    <radialGradient id="heat" cx="1176" cy="228" r="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f97316" stop-opacity="0.45"/>
+      <stop offset="0.45" stop-color="#ea580c" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#ea580c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bead" cx="0.4" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.35" stop-color="#fde68a"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </radialGradient>
+    <linearGradient id="trace" x1="600" y1="0" x2="788" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0.9"/>
+    </linearGradient>
+    <clipPath id="frame">
+      <rect width="1280" height="320" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <!-- Background -->
+    <rect width="1280" height="320" fill="url(#bg)"/>
+    <rect width="1280" height="320" fill="url(#dots)"/>
+    <rect width="1280" height="320" fill="url(#heat)"/>
+
+    <!-- Text block -->
+    <text x="64" y="92" font-family="Consolas, 'JetBrains Mono', 'Courier New', monospace" font-size="14" letter-spacing="3" fill="#fb923c">THERMOCOUPLE · SPI · ARDUINO</text>
+    <text x="62" y="160" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="64" font-weight="700" fill="#f8fafc"><tspan fill="#64748b">Lib</tspan>MAX31856</text>
+    <text x="64" y="200" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#cbd5e1">Thermocouple-to-digital converter driver</text>
+
+    <g font-family="Consolas, 'JetBrains Mono', 'Courier New', monospace" font-size="14" fill="#e2e8f0">
+      <rect x="64" y="226" width="150" height="30" rx="15" fill="#1e293b" stroke="#334155"/>
+      <text x="139" y="246" text-anchor="middle">B E J K N R S T</text>
+      <rect x="226" y="226" width="176" height="30" rx="15" fill="#1e293b" stroke="#334155"/>
+      <text x="314" y="246" text-anchor="middle">19-bit · 0.0078 °C</text>
+      <rect x="414" y="226" width="120" height="30" rx="15" fill="#1e293b" stroke="#334155"/>
+      <text x="474" y="246" text-anchor="middle">SPI · 5 MHz</text>
+    </g>
+
+    <!-- SPI traces -->
+    <g stroke="url(#trace)" stroke-width="2.5" fill="none">
+      <path d="M600 138 H788"/>
+      <path d="M600 154 H788"/>
+      <path d="M600 170 H788"/>
+      <path d="M600 186 H788"/>
+      <path d="M600 202 H788"/>
+    </g>
+    <g font-family="Consolas, 'JetBrains Mono', 'Courier New', monospace" font-size="10" fill="#7dd3fc" text-anchor="end">
+      <text x="780" y="134">SCK</text>
+      <text x="780" y="150">SDI</text>
+      <text x="780" y="166">SDO</text>
+      <text x="780" y="182">CS</text>
+      <text x="780" y="198">DRDY</text>
+    </g>
+    <text x="640" y="112" font-family="Consolas, 'JetBrains Mono', 'Courier New', monospace" font-size="12" fill="#94a3b8">READ 0x0C → <tspan fill="#38bdf8">01 90 20</tspan></text>
+
+    <!-- Chip (TSSOP-14) -->
+    <g fill="#94a3b8">
+      <rect x="788" y="119" width="12" height="6" rx="1"/>
+      <rect x="788" y="135" width="12" height="6" rx="1"/>
+      <rect x="788" y="151" width="12" height="6" rx="1"/>
+      <rect x="788" y="167" width="12" height="6" rx="1"/>
+      <rect x="788" y="183" width="12" height="6" rx="1"/>
+      <rect x="788" y="199" width="12" height="6" rx="1"/>
+      <rect x="788" y="215" width="12" height="6" rx="1"/>
+      <rect x="940" y="119" width="12" height="6" rx="1"/>
+      <rect x="940" y="135" width="12" height="6" rx="1"/>
+      <rect x="940" y="151" width="12" height="6" rx="1"/>
+      <rect x="940" y="167" width="12" height="6" rx="1"/>
+      <rect x="940" y="183" width="12" height="6" rx="1"/>
+      <rect x="940" y="199" width="12" height="6" rx="1"/>
+      <rect x="940" y="215" width="12" height="6" rx="1"/>
+    </g>
+    <rect x="800" y="108" width="140" height="124" rx="6" fill="#111827" stroke="#475569" stroke-width="1.5"/>
+    <circle cx="814" cy="122" r="4" fill="#334155"/>
+    <text x="870" y="168" text-anchor="middle" font-family="Consolas, 'JetBrains Mono', 'Courier New', monospace" font-size="17" font-weight="700" fill="#f8fafc">MAX31856</text>
+    <text x="870" y="188" text-anchor="middle" font-family="Consolas, 'JetBrains Mono', 'Courier New', monospace" font-size="10" letter-spacing="1.5" fill="#94a3b8">TC → DIGITAL</text>
+
+    <!-- Thermocouple wires (type K: yellow +, red -) -->
+    <g fill="none" stroke-linecap="round">
+      <path d="M952 154 C1010 154 1030 122 1080 150 S1140 214 1166 224" stroke="#0b1120" stroke-width="8"/>
+      <path d="M952 154 C1010 154 1030 122 1080 150 S1140 214 1166 224" stroke="#facc15" stroke-width="5"/>
+      <path d="M952 186 C1010 186 1040 232 1090 216 S1146 226 1166 232" stroke="#0b1120" stroke-width="8"/>
+      <path d="M952 186 C1010 186 1040 232 1090 216 S1146 226 1166 232" stroke="#ef4444" stroke-width="5"/>
+    </g>
+    <text x="962" y="146" font-family="Consolas, 'JetBrains Mono', 'Courier New', monospace" font-size="10" fill="#fde047">T+</text>
+    <text x="962" y="204" font-family="Consolas, 'JetBrains Mono', 'Courier New', monospace" font-size="10" fill="#fca5a5">T−</text>
+
+    <!-- Hot junction -->
+    <circle cx="1176" cy="228" r="34" fill="#f97316" fill-opacity="0.18"/>
+    <circle cx="1176" cy="228" r="11" fill="url(#bead)"/>
+    <g fill="none" stroke="#fb923c" stroke-width="2" stroke-linecap="round" stroke-opacity="0.6">
+      <path d="M1160 192 q-6 -10 0 -20 t0 -20"/>
+      <path d="M1176 186 q-6 -10 0 -20 t0 -20 t0 -20"/>
+      <path d="M1192 192 q-6 -10 0 -20 t0 -20"/>
+    </g>
+
+    <!-- Readout -->
+    <rect x="990" y="40" width="190" height="58" rx="8" fill="#0f172a" stroke="#334155"/>
+    <text x="1004" y="60" font-family="Consolas, 'JetBrains Mono', 'Courier New', monospace" font-size="10" letter-spacing="1.5" fill="#94a3b8">TYPE K · PROBE</text>
+    <text x="1004" y="86" font-family="Consolas, 'JetBrains Mono', 'Courier New', monospace" font-size="22" font-weight="700" fill="#fdba74">25.0078 °C</text>
+  </g>
+</svg>
